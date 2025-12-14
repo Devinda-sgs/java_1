@@ -6,11 +6,21 @@ class Main{
         int x=7;
         int y=8;
 
-        boolean res = a<b && x<y;
-        boolean res2 = a<b|| x<y;
+        if (a<b && x<y){
+            System.out.println("hello");
+        }
+        else{
+            System.out.println("good");
+        }
+        if (a<b || x<y) {
+            System.out.println("bye");
+        } else if (a!=b) {
+            System.out.println("hi");
 
-        System.out.println(res);
-        System.out.println(res2);
+        }
+        else{
+            System.out.println("go");
+        }
 
     }
 }
