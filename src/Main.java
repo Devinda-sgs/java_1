@@ -1,32 +1,25 @@
 class Main{
 
     public static void main(String[] args){
-        int n= 1;
-        switch (n){
-            case 1:
-                System.out.print("its monday");
-                break;
-            case 2:
-                System.out.print("its tuesday");
-                break;
-            case 3:
-                System.out.print("its wednesday");
-                break;
-            case 4:
-                System.out.print("its thursday");
-                break;
-            case 5:
-                System.out.print("its friday");
-                break;
-            case 6:
-                System.out.print("its saturday");
-                break;
-            case 7:
-                System.out.print("its sunday");
-                break;
-            default:
-                System.out.print("enter valid number");
-        }
+        String day= "monday";
+        switch (day){
+            case "sunday" ->System.out.println("1");
+            case "monday" ->System.out.println("2");
+            case "wednesday" ->System.out.println("3");
+
+            default -> System.out.print("enter valid day");
+        };
+        int result;
+
+        String day1= "monday";
+        switch (day1){
+            case "sunday" ->result =1;
+            case "monday" ->result =2;
+            case "wednesday" -> result =3;
+
+            default -> result= 0;
+        };
+        System.out.print(result);
 
 
     }
