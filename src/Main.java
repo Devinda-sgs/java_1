@@ -1,6 +1,7 @@
 class Main{
     public static void main(String[] args){
-        byte a=5;
+        byte b=5;
+        int a=(byte)b;
 
         System.out.println(a);
 
