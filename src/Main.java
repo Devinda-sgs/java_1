@@ -1,9 +1,11 @@
 class Main{
     public static void main(String[] args){
-        byte b=5;
-        int a=(byte)b;
+        int b=5;
+        int res= b++ ;
+        int res2 =++b;
 
-        System.out.println(a);
+        System.out.println(res);
+        System.out.println(res2);
 
     }
 }
