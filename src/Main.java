@@ -4,15 +4,11 @@ class Main{
 
         int i=1;
 
-        while(i<10){
+        do{
             System.out.println("hi"+i);
             i++;
-            int j=1;
-            while(j<5){
-                System.out.println("bye"+j);
-                j++;
-            }
-        }
+
+        }while(i<10);
         System.out.println("bye"+i );
 
 
