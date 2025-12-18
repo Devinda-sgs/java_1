@@ -1,14 +1,16 @@
 class Main{
 
     public static void main(String[] args){
-        for(int i=1;i<=5;i++){
-            System.out.println(i);
-            for(int j=1;j<=5;j++){
-                System.out.println(i+j);
-            }
-
-        }
+        calculator adding =new calculator();                //make object
+        int r  = adding.add(6,7);                           //pass pharameters and store it in variable r
+        System.out.println(r);                              //print result
 
 
+    }
+}
+class calculator{                                           //creaate class
+    public int add(int num1,int num2){                      //make method in it
+        int res =num1+num2;                                 //operation
+        return res;                                         //return output
     }
 }
