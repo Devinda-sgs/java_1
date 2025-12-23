@@ -1,25 +1,26 @@
-class computer{
-    void playMusic(){
-        System.out.println("Music playing");
+class calculator{
+    public int add(int a,int b){
+        return a+b;
     }
-    String getPen(int cost){
-        if (cost > 20){
-            String str ="Cost is: " +cost;
-            return str;
-        }
-        else {
-            String str = "you dont have enogh money";
-            return str;
-        }
+    public int add(int a,int b, int c){
+        return a+b+c;
+    }
+    public double add(int a,double b){
+        return a+b;
     }
 }
 
 public class Main{
     public static void main(String arg[]){
-        computer com1 = new computer();         //make com1 object
-        com1.playMusic();                       //call playMusic method
-        String stri=  com1.getPen(30);     //call getPen method and store retuned value stri variable
-        System.out.println(stri);               //print stris
+        calculator cal=new calculator();
+        int x= cal.add(5,7);
+        int y = cal.add(6,16,12);
+        double z =cal.add(9,5.04564);
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+
+
 
     }
 }
