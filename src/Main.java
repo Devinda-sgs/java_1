@@ -1,26 +1,9 @@
-class calculator{
-    public int add(int a,int b){
-        return a+b;
-    }
-    public int add(int a,int b, int c){
-        return a+b+c;
-    }
-    public double add(int a,double b){
-        return a+b;
-    }
-}
+
 
 public class Main{
     public static void main(String arg[]){
-        calculator cal=new calculator();
-        int x= cal.add(5,7);
-        int y = cal.add(6,16,12);
-        double z =cal.add(9,5.04564);
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(z);
-
-
-
+        int num[]= {1,5,8,64,23};           //create array with known element
+        int num1[]= new int[6];             //create array with size we dont know what element in there we can after fill it
+        System.out.println(num[2]);         //get value from array
     }
 }
