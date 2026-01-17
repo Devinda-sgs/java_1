@@ -1,9 +1,11 @@
 
 
 public class Main{
-    public static void main(String arg[]){
-        int num[]= {1,5,8,64,23};           //create array with known element
-        int num1[]= new int[6];             //create array with size we dont know what element in there we can after fill it
-        System.out.println(num[2]);         //get value from array
+    public static void main(String[] args) {
+        int arr[][] = new int[3][];             //jagged array
+        arr[0] = new int[2];
+        arr[1] = new int[3];
+        arr[2] = new int[4];
+        System.out.println(arr.length);
     }
 }
